@@ -43,13 +43,9 @@ public class LoanCalc {
 		double g = (loan/n);
 		iterationCounter = 0;
 		double f = endBalance(loan, rate, n, g);
-		double m = 5;
 		while(f > epsilon){	
-			if (f < 500) {
-				m = epsilon;
-			}
 			if (f > 0){
-				g = g + m;
+				g = g + epsilon;
 			}
 
 			iterationCounter++;
