@@ -22,13 +22,11 @@ public class Calendar0 {
 
 	// Tests the nDaysInMonth function.
 	private static void nDaysInMonthTest(int year) {
-		assert nDaysInMonth(2, 2020);
-		for (int i=0; i < 13; i++) {
-			value = nDaysInMonth(i, 2020);
-			switch(i);
+		for (int i=1; i < 13; i++) {
+			System.out.println("Month " + i + " has " + nDaysInMonth(i, year) + " days");
 
-		// }
 	}
+}
 
 	// Returns true if the given year is a leap year, false otherwise.
 	public static boolean isLeapYear(int year) {
@@ -45,40 +43,43 @@ public class Calendar0 {
 	// February has 28 days in a common year, and 29 days in a leap year.
 	// All the other months have 31 days.
 	public static int nDaysInMonth(int month, int year) {
-		boolean isLeapYear;
-		if (isLeapYear == True) {
-			feb == 29;
+		boolean isLeapYear = isLeapYear(year);
+		int feb;
+		if (isLeapYear) {
+			feb = 29;
+		}
 		else {
-			feb == 28;
-		switch (daysInMonth) {
+			feb = 28;
+		}
+		switch (month) {
 			case 1:
-				System.out.println("Month 1 has 31 days");
+				return 31;
 			case 2:
-				System.out.println("Month 2 has " + feb + " days");
+				return feb;
 			case 3:
-				System.out.println("Month 3 has 31 days");
+				return 31;	
 			case 4:
-				System.out.println("Month 4 has 30 days");
+				return 30;
 			case 5:
-				System.out.println("Month 5 has 31 days");
+				return 31;
 			case 6:
-				System.out.println("Month 6 has 30 days");
+				return 30;
 			case 7:	
-				System.out.println("Month 7 has 31 days");
+				return 31;
 			case 8:
-				System.out.println("Month 8 has 31 days");
+				return 31;	
 			case 9:
-				System.out.println("Month 9 has 30 days");
+				return 30;
 			case 10:
-				System.out.println("Month 10 has 31 days");
+				return 31;
 			case 11:
-				System.out.println("Month 11 has 30 days");
+				return 30;
 			case 12:
-				System.out.println("Month 9 has 31 days");
+				return 31;
 		
 		}
-	}
-}
+	
+
 		return 0;
 	}
 }
