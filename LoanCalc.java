@@ -45,8 +45,8 @@ public class LoanCalc {
 		double f = endBalance(loan, rate, n, g);
 		double m = 1;
 		while(Math.abs(f) > epsilon){	
-			if (Math.abs(f) < 100) {
-				m = epsilon;
+			if (Math.abs(f) < 500) {
+				m = epsilon / 10;
 			}
 			if (f > 0){
 				g = g + m;
@@ -99,8 +99,9 @@ public class LoanCalc {
 	*/
 	private static double endBalance(double loan, double rate, int n, double payment) {
 		double balance = loan;
+		rate /= 100;
 		for (int i = n; i > 0; i--) {
-			balance = ((balance - payment)*(1 + rate/100));
+			balance = ((balance - payment)*(1 + rate));
 		}
 
     	return balance;
