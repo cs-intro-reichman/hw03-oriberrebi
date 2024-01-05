@@ -43,16 +43,20 @@ public class LoanCalc {
 		double g = (loan/n);
 		iterationCounter = 0;
 		double f = endBalance(loan, rate, n, g);
+		double m = 1;
 		while(Math.abs(f) > epsilon){	
+			if (Math.abs(f) < 100) {
+				m = epsilon;
+			}
 			if (f > 0){
-				g = g + epsilon;
-				iterationCounter++;
+				g = g + m;
 			}
 			else if(f < 0){
-				g = g - epsilon;
-				iterationCounter++;
+				g = g - m;
 			}
+			iterationCounter++;
 			f = endBalance(loan, rate, n, g);
+			System.out.println("f:" + f + "g:" + g);
 		}
 		return g;
 		
