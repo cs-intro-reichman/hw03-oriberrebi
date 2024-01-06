@@ -34,7 +34,7 @@ public class Calendar1 {
 			System.out.println(dayOfMonth + "/" + month + "/" + year);
 			}
 		}
-		System.out.println("During the 20th century, " + sundayC + " Sundays fell onthe first day of the month");
+		System.out.println("During the 20th century, " + sundayC + " Sundays fell on the first day of the month");
 
 		
 	 	//// Write the necessary ending code here
