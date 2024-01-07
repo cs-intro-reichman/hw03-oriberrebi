@@ -27,13 +27,19 @@ public class Calendar {
 			advance();
 	 		debugDaysCounter++;
 
-            if (year == yearInput){
+            if (year == yearInput) {
+                if (dayOfMonth == 1 && dayOfWeek == 1) {
+                    sundayC++;
+                    System.out.println(dayOfMonth + "/" + month + "/" + year + " Sunday");
+            }
+            else {
                 System.out.println(dayOfMonth + "/" + month + "/" + year);
             }
 	 		//// If you want to stop the loop after n days, replace the condition of the
 	 		//// if statement with the condition (debugDaysCounter == n)
 			}
 		}
+    }
 		
 	 	//// Write the necessary ending code here
 	
@@ -47,7 +53,7 @@ public class Calendar {
 		else {
 			dayOfWeek++;
 		}
-		if (month == 12 && dayOfMonth == 31){
+		if (month == 12 && dayOfMonth == 31) {
 			month = 1;
 			dayOfMonth = 1;
 			year++;
