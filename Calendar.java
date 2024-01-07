@@ -31,10 +31,10 @@ public class Calendar {
                 if (dayOfMonth == 1 && dayOfWeek == 1) {
                     sundayC++;
                     System.out.println(dayOfMonth + "/" + month + "/" + year + " Sunday");
-            }
-            else {
+                }
+                else {
                 System.out.println(dayOfMonth + "/" + month + "/" + year);
-            }
+                }
 	 		//// If you want to stop the loop after n days, replace the condition of the
 	 		//// if statement with the condition (debugDaysCounter == n)
 			}
