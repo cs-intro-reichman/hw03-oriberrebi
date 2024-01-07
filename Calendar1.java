@@ -28,7 +28,7 @@ public class Calendar1 {
 	 		//// if statement with the condition (debugDaysCounter == n)
 	 		if (dayOfMonth == 1 && dayOfWeek == 1) {
 				sundayC++;
-				System.out.println(dayOfMonth + "/" + month + "/" + year + "Sunday");
+				System.out.println(dayOfMonth + "/" + month + "/" + year + " Sunday");
 	 		}
 			else{
 			System.out.println(dayOfMonth + "/" + month + "/" + year);
