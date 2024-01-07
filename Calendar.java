@@ -23,7 +23,7 @@ public class Calendar {
 	    int debugDaysCounter = 0; 
 	    //// Write the necessary initialization code, and replace the condition
 	    //// of the while loop with the necessary condition 
-		while (dayOfMonth != 31 || month != 12 || year != 1999) {
+		while (dayOfMonth != 31 || month != 12 || year != (yearInput)) {
 			advance();
 	 		debugDaysCounter++;
 
@@ -34,7 +34,7 @@ public class Calendar {
                 }
                 else {
                 System.out.println(dayOfMonth + "/" + month + "/" + year);
-                }
+            }
 	 		//// If you want to stop the loop after n days, replace the condition of the
 	 		//// if statement with the condition (debugDaysCounter == n)
 			}
