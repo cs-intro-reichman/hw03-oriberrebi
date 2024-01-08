@@ -28,7 +28,7 @@ public class Calendar {
 	 		debugDaysCounter++;
 
             if (year == yearInput) {
-                if (dayOfMonth == 1 && dayOfWeek == 1) {
+                if (dayOfWeek == 1) {
                     sundayC++;
                     System.out.println(dayOfMonth + "/" + month + "/" + year + " Sunday");
                 }
